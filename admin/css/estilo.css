@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+header {
+    height: 350px;/*Altura do cabeçalho*/
+    margin-top:-40px;/*negatiou a margem assim o titulo fica no topo*/
+}
+body {
+	font-size: 23px;
+}
+a {
+    color: rgb(105, 168, 222);
+    font-weight: Normal;
+    font-size: 23px;
+    position: relative;
+}
+label {
+	color: rgb(105, 168, 222);
+	font-weight: Normal;/*deixa  fonte mais fina 
+	100 Thin (Hairline)
+	200 Extra Light (Ultra Light, Ultra Fino)
+	300 Light (Fino)
+	400 Normal
+	500 Medium (Médio)
+	600 Semi Bold (Demi Bold, Semi Negrito)
+	700 Bold (Negrito)
+	800 Extra Bold (Ultra Bold, Super Negrito)
+	900 Black (Heavy) */
+}
+.w3-bar-block .w3-bar-item {
+    padding:20px
+}
+
+#clientes{
+	position: relative;
+	left: 2%;
+}
+
+#lista{
+	position: relative;
+	left: 2%;
+}
+
+.buttonGravar{
+	position: absolute;
+	top: 1190px; 
+	left: 35%;
+}
+
+.buttonVoltar{
+	position: absolute; 
+	top: 1190px;
+	left: 25%;
+}
+
+.buttonGravarPROD{
+	position: absolute;
+	top: 630px; 
+	left: 35%;
+}
+
+.buttonVoltarPROD{
+	position: absolute; 
+	top: 630px;
+	left: 25%;
+}
+
+.labelCadastro{
+	color: black;
+	font-size: 25px;
+}
+
+.labelCadastroNOM{
+	position: relative; 
+	left: 67px;
+	color: black;
+	font-size: 25px;
+}
+
+.labelCadastroEND{
+	position: relative; 
+	top: 10px;
+	left: 67px;
+	color: black;
+	font-size: 25px;
+}
+
+table{
+	border: 2px solid black;
+	border-radius: 10px;
+	border-collapse: separate;
+ 	border-spacing: 15px 20px;
+	width: 40%;
+	position: relative;
+	left: 5%;
+}
+
+input{
+	position: relative;
+	left: 5%;
+}
+
+.cadastroTable{
+	color: black;
+	font-size: 20px;
+}
+
+hr{
+      background-color: black;
+      height: 2px;
+}
