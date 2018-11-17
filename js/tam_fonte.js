@@ -1,22 +1,32 @@
-var $z = jQuery.noConflict();
-$z(document).ready(function(){
-  $z("#aumentar-fonte").click(function () {
-  var size = $z("#content p").css('font-size');
+$(document).ready(function () {
+  var section = new Array('span', 'li', 'b', /*'h1',*/ 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'table' );
+  section = section.join(',');
 
-  size = size.replace('px', '');
-  size = parseInt(size) + 2;
+  // Reset Font Size
+  // var originalFontSize = $(section).css('font-size');
+  // $(".resetFont").click(function () {
+  //     $(section).css('font-size', originalFontSize);
+  // });
 
-  $z("#content p").animate({'font-size' : size + 'px'});
-    return false;
+  // Increase Font Size
+  $("#btnAumentar").click(function () {
+      var currentFontSize = $(section).css('font-size');
+      var currentFontSizeNum = parseFloat(currentFontSize, 5);
+      if (currentFontSizeNum < 19) {
+          var newFontSize = currentFontSizeNum * 1.1;
+          $(section).css('font-size', newFontSize);
+      }
+      return false;
   });
 
-  $z("#diminuir-fonte").click(function () {
-    var size = $z("#content p").css('font-size');
-
-    size = size.replace('px', '');
-    size = parseInt(size) - 2;
-
-    $z("#content p").animate({'font-size' : size + 'px'});
-    return false;
+  // Decrease Font Size
+  $("#btnDiminuir").click(function () {
+      var currentFontSize = $(section).css('font-size');
+      var currentFontSizeNum = parseFloat(currentFontSize, 5);
+      if (currentFontSizeNum > 10) {
+          var newFontSize = currentFontSizeNum * 0.9;
+          $(section).css('font-size', newFontSize);
+      }
+      return false;
   });
 });

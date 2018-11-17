@@ -1,0 +1,45 @@
+#img_logo {  
+  width: 45px;
+  height: 45px;
+  left: 0px;
+}
+
+#logo_navbar {
+  color: rgba(237, 249, 255) !important;
+  font-family: Helvetica Neue !important;
+  font-size: 1.90rem; 
+}
+
+#msg_principal {
+  padding: 150px;
+}
+
+#services {
+  padding: 45px; margin-bottom: 30px;
+}
+
+#slogan {
+  font-size: 60px; 
+  padding: 30px; 
+  margin-bottom: 5px;
+}
+
+#portfolio {
+  padding: 45px;
+}
+
+#desenvolvedores{
+  margin-bottom: 25px;
+}
+
+#social_imgs{
+  width: 45px;  
+  height: 45px;  
+  left: 0px; 
+  border: 0px;
+}
+
+#team{
+  padding: 45px; 
+  margin-bottom: 30px;
+}

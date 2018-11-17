@@ -23,6 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/custumizacao.css" rel="stylesheet">
 
   </head>
   
@@ -39,9 +40,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a style="  color: rgba(237, 249, 255);  font-family: Helvetica Neue;  font-size: 1.90rem; " class="navbar-brand js-scroll-trigger" href="#page-top">
-        	<img src="img/Logo.png" alt="logo" style="  width: 45px;  height: 45px;  left: 0px;" />
-        	Hass Soluções
+        <a  class="navbar-brand js-scroll-trigger" id="logo_navbar" href="#page-top">
+        	<img src="img/Logo.png" alt="logo" id="img_logo" />
+        	Hass Soluções 
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -56,23 +57,16 @@
               <a class="nav-link js-scroll-trigger" href="#portfolio">Clientes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="essence/index.html">Produtos</a>	
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Desenvolvedores</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
             </li>
             <li class="nav-item">
-              <span id="diminuir-fonte">
-                <a href="" class="nav-link js-scroll-trigger" title="Diminuir Fonte" alt="Diminuir">A-</a>
-              </span>
+                <button class="btn btn-info btn-sm " type="button" id="btnDiminuir">A-</button>
             </li>
             <li class="nav-item">
-                <span id="aumentar-fonte">
-                  <a href="" class="nav-link js-scroll-trigger" title="Aumentar Fonte" alt="Aumentar">A+</a>
-                </span>
+                <button class="btn btn-info btn-sm " type="button" id="btnAumentar">A+</button>
             </li>
           </ul>
         </div>
@@ -82,18 +76,17 @@
     <!-- Header -->
     <header class="masthead">
       <div  class="container"  >
-        <div class="intro-text" style=" padding: 150px;">
-          <center>
-          <div style=" background: rgba(255, 255, 255, 0.5); width: 650px; color: rgba(255, 255, 255); " class="intro-lead-in">Seja bem vindo ao hass soluções!</div>
-          </center>
-          <div class="intro-heading text-uppercase" style=" font-size: 60px; padding: 30px; margin-bottom: 5px;" >Sua segurança é o nosso compromisso</div>
+        <div class="intro-text" id="msg_principal" >
+          <div class="intro-heading text-uppercase"  >
+            <h1 id="slogan" > Sua segurança é o nosso compromisso </h1>
+          </div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services" >Saiba Mais</a>
         </div>
       </div>
     </header>
 
     <!-- Serviços -->
-    <section style=" padding: 45px; margin-bottom: 30px;" id="services">
+    <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -131,12 +124,12 @@
     </section>
 
     <!-- Clientes -->
-    <section style=" padding: 45px;" class="bg-light" id="portfolio">
+    <section  class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Clientes</h2>
-            <h3 style="margin-bottom: 25px;" class="section-subheading text-muted">Conheça alguns dos nossos clientes satisfeitos!</h3>
+            <h3 class="section-subheading text-muted" id="desenvolvedores" >Conheça alguns dos nossos clientes satisfeitos!</h3>
           </div>
         </div>
         <div class="row">
@@ -188,12 +181,12 @@
     </section>
 
  
-    <section style=" padding: 45px; margin-bottom: 30px;" class="bg-light" id="team">
+    <section class="bg-light" id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Desenvolvedores</h2>
-            <h3 style="margin-bottom: 25px;" class="section-subheading text-muted">Entre em contato com um dos nossos desenvolvedores</h3>
+            <h3 class="section-subheading text-muted" id="desenvolvedores">Entre em contato com um dos nossos desenvolvedores</h3>
           </div>
         </div>
         <div class="row">
@@ -206,16 +199,16 @@
               <p class="text-muted">Técnico de Infraestrutura</p>
               <ul class="list-inline social-buttons">
               	 <a href="https://www.facebook.com/cristofer.viantehass" target="_blank">
-              	 	<img src="img/social/facebook.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/facebook.png" id="social_imgs">
                  </a>
                  <a href="https://m.me/cristofer.viantehass" target="_blank">
-              	 	<img src="img/social/messenger.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/messenger.png" id="social_imgs">
                  </a>	
                  <a href="https://api.whatsapp.com/send?phone=554298251075&text=Olá Cristofer!" target="_blank">
-              	 	<img src="img/social/whatsapp.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/whatsapp.png" id="social_imgs">
                  </a>	
                  <a href="https://br.linkedin.com/in/cristofer-viante-hass-b8126b163" target="_blank">
-              	 	<img src="img/social/linkedin.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/linkedin.png" id="social_imgs">
                  </a>	
               </ul>
             </div>
@@ -321,7 +314,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span style="line-height: 0px;" class="copyright">Endereço: Rua Teófilo José de Freitas, 348, sala 2 - Centro (38,87 km) 84130-000 Palmeira (Paraná)</span>
+            <span  style="line-height: 0px;" class="copyright">Endereço: Rua Teófilo José de Freitas, 348, sala 2 - Centro (38,87 km) 84130-000 Palmeira (Paraná)</span>
             <br style="line-height: 0px;">
             <span style="line-height: 0px;" class="copyright">Telefone: (42) 3252-1611</span>
             <br style="line-height: 0px;">
@@ -331,21 +324,14 @@
           <div style="top: 40px;" class="col-md-4">
             <ul class="list-inline social-buttons">
               	 <a href="https://www.facebook.com/hasssolucoes" target="_blank">
-              	 	<img src="img/social/facebook.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/facebook.png" id="social_imgs" >
                  </a>
                  <a href="https://m.me/hasssolucoes" target="_blank">
-              	 	<img src="img/social/messenger.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/messenger.png" id="social_imgs">
                  </a>	
                  <a href="https://api.whatsapp.com/send?phone=5542998330631&text=Olá Hass Soluções!" target="_blank">
-              	 	<img src="img/social/whatsapp.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/whatsapp.png" id="social_imgs" >
                  </a>	
-            </ul>
-          </div>
-          <div  style="top: 40px;" class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="admin\admin.php">Acesso Admnistrador</a>
-              </li>
             </ul>
           </div>
         </div>
@@ -367,7 +353,7 @@
                   <h2 class="text-uppercase">Rendicolla</h2>
                   <p class="item-intro text-muted">Rendicolla Comércio, Exportação e Importação de Produtos Químicos Ltda.</p>
                   <img class="img-fluid d-block mx-auto" src="img/clientes/01-rendicollaGD.jpg" alt="">
-                  <button class="btn btn-primary" data-dismiss="modal" type="button" href:"http://www.rendicolla.com.br/">
+                  <button class="btn btn-primary" data-dismiss="modal" type="button" >
                     <i class="fa fa-times"></i>
                     Close Project</button>
                 </div>
@@ -437,7 +423,7 @@
     
 
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
