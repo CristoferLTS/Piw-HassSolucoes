@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var section = new Array('span', 'li', 'b', /*'h1',*/ 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'table' );
+  var section = new Array(/*'span',*/ 'li', 'b', /*'h1',*/ 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'table' );
   section = section.join(',');
 
   // Reset Font Size
@@ -12,7 +12,7 @@ $(document).ready(function () {
   $("#btnAumentar").click(function () {
       var currentFontSize = $(section).css('font-size');
       var currentFontSizeNum = parseFloat(currentFontSize, 5);
-      if (currentFontSizeNum < 19) {
+      if (currentFontSizeNum < 24) {
           var newFontSize = currentFontSizeNum * 1.1;
           $(section).css('font-size', newFontSize);
       }
