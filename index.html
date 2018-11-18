@@ -39,7 +39,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
+      <div class="container-fluid">
         <a  class="navbar-brand js-scroll-trigger" id="logo_navbar" href="#page-top">
         	<img src="img/Logo.png" alt="logo" id="img_logo" />
         	Hass Soluções 
@@ -62,12 +62,6 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
             </li>
-            <li class="nav-item">
-                <button class="btn btn-info btn-sm " type="button" id="btnDiminuir">A-</button>
-            </li>
-            <li class="nav-item">
-                <button class="btn btn-info btn-sm " type="button" id="btnAumentar">A+</button>
-            </li>
           </ul>
         </div>
       </div>
@@ -75,10 +69,10 @@
 
     <!-- Header -->
     <header class="masthead">
-      <div  class="container"  >
+      <div  class="container-fluid"  >
         <div class="intro-text" id="msg_principal" >
           <div class="intro-heading text-uppercase"  >
-            <h1 id="slogan" > Sua segurança é o nosso compromisso </h1>
+            <h1 class="display-1" id="slogan" > Sua segurança é o nosso compromisso </h1>
           </div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services" >Saiba Mais</a>
         </div>
@@ -195,7 +189,7 @@
         <div class="row">
           
 
-          <div style="position: relative; left: 16%;" class="col-sm-4">
+          <div id="devs" class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
               <h4>Cristofer Viante Hass</h4>
@@ -216,23 +210,23 @@
               </ul>
             </div>
           </div>
-          <div style="position: relative; left: 16%;" class="col-sm-4">
+          <div id="devs" class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
               <h4>Leonaldo F. Nunes Junior</h4>
               <p class="text-muted">Programador Júnior</p>
               <ul class="list-inline social-buttons">
               	 <a href="https://www.facebook.com/leonaldo.ferreiranunesjunior" target="_blank">
-              	 	<img src="img/social/facebook.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/facebook.png" id="social_imgs">
                  </a>
                  <a href="https://m.me/leonaldo.ferreiranunesjunior" target="_blank">
-              	 	<img src="img/social/messenger.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/messenger.png" id="social_imgs">
                  </a>	
                  <a href="https://api.whatsapp.com/send?phone=5542998404681&text=Olá Leonaldo!" target="_blank">
-              	 	<img src="img/social/whatsapp.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/whatsapp.png" id="social_imgs">
                  </a>		
                  <a href="#" target="_blank">
-              	 	<img src="img/social/linkedin.png" style=" width: 45px;  height: 45px;  left: 0px; border: 0px;">
+              	 	<img src="img/social/linkedin.png" id="social_imgs">
                  </a>
                 </li> 
               </ul>
@@ -269,12 +263,13 @@
         </div>
       </div>
     </section>
-    <section style=" padding: 45px; margin-bottom: 30px; " id="contact">
+
+    <section  id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Contato</h2>
-            <h3 style="color: rgb(255,255,255); padding: 5px; margin-bottom: 15px;" class="section-subheading">Digite as informações a seguir, em breve entraremos em contato.</h3>
+            <h3 id="contato" class="section-subheading">Digite as informações a seguir, em breve entraremos em contato.</h3>
           </div>
         </div>
         <div class="row">
@@ -317,14 +312,14 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span  style="line-height: 0px;" class="copyright">Endereço: Rua Teófilo José de Freitas, 348, sala 2 - Centro (38,87 km) 84130-000 Palmeira (Paraná)</span>
-            <br style="line-height: 0px;">
-            <span style="line-height: 0px;" class="copyright">Telefone: (42) 3252-1611</span>
-            <br style="line-height: 0px;">
-            <span style="line-height: 0px;" class="copyright">E-mail: contato@hasssolucoes.com.br  suporte@hasssolucoes.com.br</span>
-            <br style="line-height: 0px;" >
+            <span  id="endereco" class="copyright">Endereço: Rua Teófilo José de Freitas, 348, sala 2 - Centro (38,87 km) 84130-000 Palmeira (Paraná)</span>
+            <br id="endereco">
+            <span id="endereco" class="copyright">Telefone: (42) 3252-1611</span>
+            <br id="endereco">
+            <span id="endereco" class="copyright">E-mail: contato@hasssolucoes.com.br  suporte@hasssolucoes.com.br</span>
+            <br id="endereco" >
           </div>
-          <div style="top: 40px;" class="col-md-4">
+          <div class="col-md-4" id="grup_social">
             <ul class="list-inline social-buttons">
               	 <a href="https://www.facebook.com/hasssolucoes" target="_blank">
               	 	<img src="img/social/facebook.png" id="social_imgs" >
@@ -421,6 +416,11 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="mybutton">
+      <button class="btn btn-info btn-sm " type="button" id="btnDiminuir">A-</button>
+      <button class="btn btn-info btn-sm " type="button" id="btnAumentar">A+</button>
     </div>
 
     

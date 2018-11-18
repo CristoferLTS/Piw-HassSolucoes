@@ -43,3 +43,47 @@
   padding: 45px; 
   margin-bottom: 30px;
 }
+
+#endereco{
+  line-height: 0px;
+}
+
+#devs{
+  position: relative;
+  left: 16%;
+}
+
+#contato{
+  color: rgb(255,255,255); padding: 5px;
+  margin-bottom: 15px;
+}
+
+#grup_social{
+  top: 40px;
+}
+
+#btnDiminuir{
+  float: center;
+}
+
+#btnAumentar{
+  float: center;
+}
+
+#contact{
+  padding: 45px; 
+  margin-bottom: 30px;
+
+}
+
+.feedback {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+#mybutton {
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
+}
